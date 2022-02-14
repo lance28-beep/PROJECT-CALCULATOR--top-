@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #facf5a;
+  --secondaryColor: #ff5959;
+  --tertiaryColor: #49beb7;
+  --quadColor: #085f63;
+  --lastColor: #f5f5f5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--quadColor);
+  color: var(--lastColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 700px;
+  height: 864px;
+  position: relative;
+}
+
+.container h1 {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--lastColor);
+}
+
+.calculator {
+  width: 429px;
+  height: 760px;
+  background-color: var(--tertiaryColor);
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: 1s ease-in-out;
+}
+
+.calculator:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+
+.calculator-display {
+  background-color: var(--secondaryColor);
+  width: 429px;
+  height: 304px;
+  border-radius: 0% 0% 100% 100% / 25% 25% 85% 85%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.calculator-display .screen-last {
+  font-size: 40px;
+  margin-top: -55px;
+  margin-left: 10px;
+  align-self: flex-start;
+  color: var(--primaryColor);
+}
+.calculator-display .screen-current {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-top: 25px;
+  align-self: flex-end;
+   color: var(--primaryColor);
+}
+.calculator-keypad {
+  width: 100%;
+  height: 429px;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+  column-gap: 5px;
+  row-gap: 14px;
+  padding: 5px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.calculator-keypad > button {
+  border-radius: 25px;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  font-size: 50px;
+  border: 1px solid var(--quadColor);
+}
+
+.calculator-keypad > button:active {
+  transform: scale(0.95);
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.log {
+  width: 400px;
+  height: 761px;
+  position: absolute;
+  right: 0;
+  background-color: var(--primaryColor);
+  border-radius: 30px;
+  transition: 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .log:hover {
+  transition: 1s;
+  z-index: 9999;
+  transform: scale(1.1);
+}
+
+.log h1 {
+  margin-top: 25px;
+  position: static;
+  color: var(--quadColor);
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+.log p {
+  margin-top: 25px;
+  position: static;
+  color: var(--lastColor);
+  font-size: 20px;
+  text-transform: capitalize;
+  color: var(--quadColor);
+  font-weight: 600;
+  font-size: 24px;
+}

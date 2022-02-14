@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator App</h1>
+      <div class="calculator">
+        <div class="calculator-display">
+          <div class="screen-last" id="lastOperationScreen">24 + 24 = 48</div>
+          <div class="screen-current" id="currentOperationScreen">24</div>
+        </div>
+        <div class="calculator-keypad">
+            <button class="calculator-key key-clear" id="clear">C</button>
+            <button class="calculator-key key-sign" id="changeSign">+/-</button>
+            <button class="calculator-key key-percent" id="percent">%</button>
+            <button class="calculator-key key-divide" id="divide">&divide;</button>
+
+            <button class="calculator-key key-7" id="seven">7</button>
+            <button class="calculator-key key-8" id="eight">8</button>
+            <button class="calculator-key key-9" id="nine">9</button>
+            <button class="calculator-key key-multiply" id="multiply">&times;</button>
+
+            <button class="calculator-key key-4" id="four">4</button>
+            <button class="calculator-key key-5" id="five">5</button>
+            <button class="calculator-key key-6" id="six">6</button>
+            <button class="calculator-key key-subtract" id="subtract">&minus;</button>
+
+            <button class="calculator-key key-1" id="one">1</button>
+            <button class="calculator-key key-2" id="two">2</button>
+            <button class="calculator-key key-3" id="three">3</button>
+            <button class="calculator-key key-add" id="add">+</button>
+
+            <button class="calculator-key key-1" id="zero">0</button>
+            <button class="calculator-key key-2" id="backspace">&LeftArrow;</button>
+            <button class="calculator-key key-3" id="decimal">,</button>
+            <button class="calculator-key key-add" id="equals">=</button>
+      </div>
+    </div>
+        <div class="log">
+          <h1>history</h1>
+          <p>24 + 2 = 5</p>
+        </div>
+    <script src="script.js"></script>
+  </body>
+</html>
