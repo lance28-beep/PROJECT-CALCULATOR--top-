@@ -11,15 +11,22 @@ let currentNumber = ''
 let lastNumber = ''
 let lastOperationResult = ''
 
-//loop to each button
-Button.forEach(button => {
+//Loop every button.add click event listener on each//identify what button was pressed.
+Button.forEach((button) => {
   button.addEventListener('click', () => {
-    
+    let value = button.getAttribute('data-value')
+    switch (value) {
+    }
   })
 })
+//If numbers cliked.Update first screen.
 
+//if operator clicked.update second screen with operator.
 
+//if operator and was clicked but both fist and second screen are not empty.
+//`solve` the operation.
 
+//once solve.update the first screen with the result.empty the second screen.
 
 ///solver function
 // case 'divide':
